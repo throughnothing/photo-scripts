@@ -11,6 +11,7 @@ fi
 
 TIMEOFFSET=$2
 if [[ ! -n "$2" ]]; then
+	echo "Defaulting time offset to 14400..."
 	TIMEOFFSET=14400
 fi
 
