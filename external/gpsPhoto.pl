@@ -139,6 +139,7 @@ sub exifTool($)
 	my $self = shift;
 	if (!exists $self->{exifTool}) {
 		$self->{exifTool} = new Image::ExifTool;
+		$self->{exifTool}->Options(IgnoreMinorErrors => 1);
 	}
 	return $self->{exifTool};
 }
