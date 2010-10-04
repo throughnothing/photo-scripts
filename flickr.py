@@ -40,11 +40,14 @@ class Ls:
         for c in cs.find('collections').findall('collection'):
             print c.attrib['title'] + "(" + c.attrib['id'] + "): " + c.attrib['description']
 
+    def collection(self,collection_id):
+        cs = flickr.collections_getTree(user_id=collection_id)
+        for c in cs.find('collections').findall('collection'):
+            print c.attrib['title'] + "(" + c.attrib['id'] + "): " + c.attrib['description']
+
     def sets(self,collection_id=""):
         if collection_id != "":
-            print "listing collection"
             sets = flickr.collections_getTree(collection_id=collection_id).find('collections').find('collection').findall('set')
-            print sets
             for s in sets:
                 print s.attrib['title'] + "(" + s.attrib['id'] + "): " + s.attrib['description']
         else:
