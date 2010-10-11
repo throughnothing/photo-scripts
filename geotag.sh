@@ -15,5 +15,5 @@ if [[ ! -n "$2" ]]; then
 	TIMEOFFSET=14400
 fi
 
-gpsPhoto.pl --gpsdir $1 --dir $1 --maxtimediff 60 --timeoffset $TIMEOFFSET
+gpsPhoto.pl --gpsdir $1 --dir $1 --maxtimediff 600 --timeoffset $TIMEOFFSET
 

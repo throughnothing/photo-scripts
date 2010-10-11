@@ -4,9 +4,6 @@ select photos that are going to be uploaded
 modify/enhance photos to be uploaded
 upload photos : collection to put it in, set name, set description
 
-
-
-
 Collection/Set Structure: ??
 couchdb/mysql data structure:
 	trips -> start date, end date, name, places, summary
