@@ -17,8 +17,8 @@ fi
 
 TIMEOFFSET=$2
 if [[ ! -n "$2" ]]; then
-	echo "Defaulting time offset to 14400..."
-	TIMEOFFSET=14400
+	echo "Defaulting time offset to 0..."
+	TIMEOFFSET=0
 fi
 
 gpsPhoto.pl --gpsdir $1 --dir $2 --maxtimediff 900 --timeoffset $TIMEOFFSET
