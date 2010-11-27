@@ -9,5 +9,5 @@ else
   FILE=$1 
 fi
 
-sudo gpsbabel -t -i garmin -f usb: -o kml -F $KML_PATH/$FILE.kml
-sudo gpsbabel -t -i garmin -f usb: -o gpx -F /tmp/$FILE.gpx
+#sudo gpsbabel -t -i garmin -f usb: -o kml -F $KML_PATH/$FILE.kml
+sudo gpsbabel -t -i garmin -f usb: -o gpx -F ~/Downloads/$FILE.gpx
